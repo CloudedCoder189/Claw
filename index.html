@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OpenClaw Personal Assistant is a private, owner-operated AI automation workspace for organizing research, documents, schedules, and completed reports.">
+  <meta name="theme-color" content="#101827">
+  <title>OpenClaw Personal Assistant | Private AI Workspace</title>
+  <style>
+    :root {color-scheme: dark; font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; --bg:#101827; --panel:#182438; --text:#ecf2f8; --muted:#a9b8c9; --accent:#89c5ed; --border:#2b3d54}
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(circle at 50% -20%,#243955 0,#101827 56%);color:var(--text);line-height:1.65}
+    a{color:var(--accent);text-underline-offset:3px}
+    a:hover{text-decoration-thickness:2px}
+    a:focus-visible{outline:3px solid var(--accent);outline-offset:4px;border-radius:4px}
+    .wrap{max-width:900px;margin:auto;padding:0 24px}
+    header{border-bottom:1px solid var(--border)}
+    nav{min-height:76px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+    .brand{font-weight:750;letter-spacing:-.02em;color:white;text-decoration:none;font-size:1.06rem}
+    .nav-links{display:flex;gap:20px;font-size:.92rem}
+    main{padding:72px 0 64px}
+    .eyebrow{text-transform:uppercase;letter-spacing:.16em;color:var(--accent);font-size:.76rem;font-weight:750}
+    h1{font-size:clamp(2.2rem,6vw,4.3rem);line-height:1.12;letter-spacing:-.045em;margin:14px 0 22px;max-width:770px}
+    .lead{max-width:720px;font-size:1.18rem;color:#c5d2e0;margin:0}
+    .pill{display:inline-block;margin-top:24px;padding:7px 12px;border:1px solid #3d6278;border-radius:99px;color:#c7e9fa;font-size:.82rem}
+    section{margin-top:64px}
+    h2{font-size:1.55rem;letter-spacing:-.025em;margin:0 0 20px}
+    h3{font-size:1.07rem;margin:0 0 8px}
+    p{margin:0 0 14px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .card{background:var(--panel);border:1px solid var(--border);border-radius:15px;padding:24px}
+    .card p,.note{color:var(--muted)}
+    .callout{background:#14283a;border-left:3px solid var(--accent);border-radius:8px;padding:22px 24px;color:#d7e5f0}
+    footer{border-top:1px solid var(--border);padding:28px 0 40px;color:var(--muted);font-size:.9rem}
+    footer .wrap{display:flex;gap:15px;justify-content:space-between;flex-wrap:wrap}
+    @media(max-width:620px){main{padding:50px 0}nav{padding:16px 0}.grid{grid-template-columns:1fr}.nav-links{gap:12px}section{margin-top:44px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main navigation">
+  <a class="brand" href="./">OpenClaw Personal Assistant</a>
+  <div class="nav-links"><a href="#capabilities">Capabilities</a><a href="#data">Data use</a><a href="privacy.html">Privacy policy</a></div>
+</nav></div></header>
+<main class="wrap">
+  <div class="eyebrow">Private, owner-operated automation</div>
+  <h1>An AI workspace for research, organization, and deliverables.</h1>
+  <p class="lead">OpenClaw Personal Assistant is a personal automation project operated for a single account owner. It coordinates approved research tasks, organizes work, and delivers completed files using connected services.</p>
+  <div class="pill">Personal-use project · Not open for public registration</div>
+
+  <section id="capabilities" aria-labelledby="cap-heading">
+    <h2 id="cap-heading">What the assistant is designed to do</h2>
+    <div class="grid">
+      <article class="card"><h3>Research and reports</h3><p>Research public sources, prepare structured findings, and create files for the owner's review.</p></article>
+      <article class="card"><h3>Google Drive, Docs &amp; Sheets</h3><p>Store deliverables, create and organize documents or spreadsheets, and privately share approved outputs.</p></article>
+      <article class="card"><h3>Gmail &amp; Calendar</h3><p>Support owner-authorized email and scheduling workflows. Sending messages or changing important information is intended to require approval.</p></article>
+      <article class="card"><h3>Delivery notifications</h3><p>Use a local automation workflow to upload completed reports and send the owner their links through Discord.</p></article>
+    </div>
+  </section>
+
+  <section id="data" aria-labelledby="data-heading">
+    <h2 id="data-heading">How Google access works</h2>
+    <p>The owner authorizes access using Google's OAuth consent process. The installed GOG CLI and local automation tools use the approved permissions for Gmail, Calendar, Drive, Docs, and Sheets. Access is limited to workflows initiated or configured by the owner; connecting a service does not mean every available action is performed.</p>
+    <div class="callout"><strong>Private by design.</strong> Finished files are stored in the assistant account's Google Drive and shared only with the owner's preapproved account by default. The project does not offer public signup or sell Google user data. Local automation and, where the owner chooses to use them, external AI services and Discord may process task information. See the privacy policy for the details and limitations.</div>
+  </section>
+
+  <section aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Contact and privacy</h2>
+    <p>For questions about this app or Google account access, contact <a href="mailto:openclaw189@gmail.com">openclaw189@gmail.com</a>.</p>
+    <p><a href="privacy.html">Read the privacy policy</a> for an explanation of requested Google permissions, storage, sharing, retention, and how to revoke access.</p>
+  </section>
+</main>
+<footer><div class="wrap"><span>© 2026 OpenClaw Personal Assistant · Independent personal project</span><span><a href="privacy.html">Privacy policy</a></span></div></footer>
+</body>
+</html>
